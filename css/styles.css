@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: beige;
+    height: 100vh;
+}
+
+.grilla {
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    min-height: 100vh;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin: 0 10%;
+}
+
+.logoMasMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.logoHeader {
+    margin-right: 48px;
+}
+
+.beneficiosDestacados {
+    background-color: rgb(255, 227, 218);
+    width: 100%;
+    padding: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.niveles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.heroImg {
+    width: 600px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.itemMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px;
+    letter-spacing: 4px;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+
+.todosLosNiveles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.itemBeneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 40px;
+    }
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.itemNiveles {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+footer p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.tabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contacto {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 32px;
+}
+
+main p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+input {
+    margin: 4px;
+}
+
+td, th, caption {
+    min-width: 100px;
+    padding: 12px;
+    background-color: rgb(29, 24, 32, 0.05);
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li {
+    margin: 4px 12px;
+    list-style-type: none;
+}
+
+h1 {   
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+section ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    padding-bottom: 12px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+    margin-top: 36px;
+    background-color: rgb(29, 24, 32);
+    color: beige;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 970px) {
+    .beneficios {
+        flex-direction: column;
+    }
+
+    .logoMasMenu {
+        flex-direction: column;
+    }
+
+    .todosLosNiveles {
+        flex-direction: column;
+    }
+
+    .itemMenu {
+        padding: 2px;
+    }
+
+    header {
+        margin: 0%;
+    }
+
+    .itemNiveles {
+        padding: 16px;
+        padding-top: 4px;
+    }
+}
