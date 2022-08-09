@@ -259,13 +259,14 @@ footer img {
     padding-left: 20px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 991px) {
     .beneficios {
         flex-direction: column;
     }
 
     .logoMasMenu {
-        flex-direction: column;
+        justify-content:space-between;
+        margin: 0px 25%;
     }
 
     .todosLosNiveles {
