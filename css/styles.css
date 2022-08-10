@@ -8,15 +8,15 @@
 }
 
 body {
-    background-color: beige;
-    height: 100vh;
+    background-color: beige !important;
+    min-height: 100vh;
 }
 
-.grilla {
+/* .grilla {
     display: grid;
     grid-template-rows: 130px auto 10%;
     min-height: 100vh;
-}
+} */
 
 .contenido {
     display: flex;
@@ -159,6 +159,12 @@ footer p {
     font-size: 14px;
 }
 
+.tipografia {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .contacto {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -185,6 +191,11 @@ td, th, caption {
     min-width: 100px;
     padding: 12px;
     background-color: rgb(29, 24, 32, 0.05);
+}
+
+.maxImg {
+    width: 70%;
+    margin-top: 8px;
 }
 
 ul li a {
@@ -239,7 +250,7 @@ footer {
     background-color: rgb(29, 24, 32);
     color: beige;
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -269,5 +280,11 @@ footer img {
     .itemNiveles {
         padding: 16px;
         padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .heroImg {
+        width: 100%;
     }
 }
