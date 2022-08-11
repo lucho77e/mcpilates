@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+form, .form-texto {
+    text-align: left !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
 body {
     background-color: beige !important;
     min-height: 100vh;
@@ -205,6 +212,11 @@ ul li a {
 ul li {
     margin: 4px 12px;
     list-style-type: none;
+}
+
+.itemBeneficios img {
+    width: 128px;
+    margin-bottom: 24px;
 }
 
 h1 {   
