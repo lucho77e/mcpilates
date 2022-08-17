@@ -4,7 +4,7 @@ main {
     align-items: center;
     justify-content: center;
     p {
-        font-family: 'Raleway', sans-serif;
+        font-family: $rale;
         font-weight: 400;
         font-size: 14px;
         margin-top: 32px;
@@ -53,7 +53,7 @@ main {
             li {
                 margin: 4px 12px;
                 list-style-type: none;
-                font-family: 'Raleway', sans-serif;
+                font-family: $rale;
                 font-weight: 400;
                 font-size: 14px;
                 padding: 40px;
@@ -73,7 +73,7 @@ main {
                 flex-direction: column;
                 justify-content: space-around;
                 height: 250px;
-                font-family: 'Raleway', sans-serif;
+                font-family: $rale;
                 font-weight: 400;
                 font-size: 14px;
                 padding: 40px;

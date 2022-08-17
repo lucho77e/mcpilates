@@ -4,6 +4,9 @@
 @import "footer";
 @import "tipografia";
 
+$rale: 'Raleway', sans-serif;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +22,7 @@ body {
 
 form, .form-texto {
     text-align: left !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: $rale;;
     font-weight: 300;
     font-size: 14px;
 }
@@ -44,19 +47,19 @@ form, .form-texto {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $rale;;
     font-weight: 400;
     font-size: 14px;
 }
 
 .tipografia {
-    font-family: 'Raleway', sans-serif;
+    font-family: $rale;;
     font-weight: 400;
     font-size: 14px;
 }
 
 .contacto {
-    font-family: 'Raleway', sans-serif;
+    font-family: $rale;;
     font-weight: 400;
     font-size: 14px;
     margin: 32px;
