@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import "header";
+@import "main";
+@import "footer";
+@import "tipografia";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige !important;
+    min-height: 100vh;
+}
+
+
+
+form, .form-texto {
+    text-align: left !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+
+
+ @keyframes aparecerB {
+    0% {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+ }
+     
+
+
+.tabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tipografia {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contacto {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 32px;
+}
+
+input {
+    margin: 4px;
+}
+
+td, th, caption {
+    min-width: 100px;
+    padding: 12px;
+    background-color: rgb(29, 24, 32, 0.05);
+}
+
+.maxImg {
+    width: 70%;
+    margin-top: 8px;
+}
+
+
+
+@keyframes aparecerTitulo {
+    0% {
+      opacity: 0;
+      transform:translate(0px, -12px);
+    }
+    100% {
+      opacity: 1;
+      transform:translate(0px, 0px);
+      transform: scale(1);
+    }
+ }
+
+section ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+

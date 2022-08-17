@@ -1,0 +1,28 @@
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: 20px;
+    animation-duration: 0.5s;
+    animation-name: aparecerTitulo;
+    animation-timing-function: ease-in-out;
+    text-align: center;
+}
+
+h1 {   
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+    animation-duration: 0.5s;
+    animation-name: aparecerTitulo;
+    animation-timing-function: ease-in-out;
+}

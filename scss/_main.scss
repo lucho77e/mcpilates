@@ -1,0 +1,113 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    img {
+        width: 600px;
+    }
+    .beneficiosDestacados {
+        background-color: rgb(255, 227, 218);
+        width: 100%;
+        padding: 40px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        ul{ 
+            li{
+                margin: 4px 12px;
+                list-style-type: none;
+                div{
+                    img{
+                        width: 128px;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .niveles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 40px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            li {
+                margin: 4px 12px;
+                list-style-type: none;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 40px;
+                padding-top: 20px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        li {
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 250px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 40px;
+                animation-duration: 0.9s;
+                animation-name: aparecerB;
+                animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    body {
+        main {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        main {
+            .niveles {
+                ul {
+                    flex-direction: column;
+                    li {
+                        padding: 16px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

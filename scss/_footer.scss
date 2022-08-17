@@ -1,0 +1,24 @@
+footer {
+    padding-bottom: 12px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+    margin-top: 36px;
+    background-color: rgb(29, 24, 32);
+    color: beige;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+    }
+    img {
+        padding-left: 20px;
+    } 
+}

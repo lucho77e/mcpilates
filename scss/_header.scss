@@ -1,0 +1,42 @@
+
+body {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 16px 0px;
+        nav {
+            div {
+                img{
+                    margin-right: 48px;
+                    animation-duration: 0.9s;
+                    animation-name: aparecerB;
+                    animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+                }
+                div {
+                    ul{
+                        li{
+                            a{
+                                text-decoration: none;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 400;
+                                font-size: 14px;
+                                letter-spacing: 4px;
+                                margin: 4px 12px;
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    header {
+        margin: 0%;
+    }
+}
