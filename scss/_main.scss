@@ -1,12 +1,7 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column);
     p {
-        font-family: $rale;
-        font-weight: 400;
-        font-size: 14px;
+        @extend .tipografia;
         margin-top: 32px;
         margin-bottom: 32px;
         margin-left: auto;
@@ -14,7 +9,9 @@ main {
         width: 50%;
     }
     img {
-        width: 600px;
+        width: 100%;
+        margin-bottom: 24px;
+        // width: 600px;
     }
     .beneficiosDestacados {
         background-color: map-get($colors, pink);
@@ -23,10 +20,12 @@ main {
         margin-top: 24px;
         margin-bottom: 24px;
         ul{ 
+            padding-left: 0px;
             li{
                 margin: 4px 12px;
                 list-style-type: none;
                 div{
+                    text-align: center;
                     img{
                         width: 128px;
                         margin-bottom: 24px;
@@ -36,46 +35,33 @@ main {
         }
     }
     .niveles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(column);
         width: 100%;
         padding: 40px;
         margin-top: 12px;
         margin-bottom: 12px;
         ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            @include flex(row);
             width: 100%;
             li {
+                @extend .tipografia;
                 margin: 4px 12px;
                 list-style-type: none;
-                font-family: $rale;
-                font-weight: 400;
-                font-size: 14px;
                 padding: 40px;
                 padding-top: 20px;
             }
         }
     }
     ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flex(row);
         width: 100%;
         li {
             div {
+                @extend .tipografia;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 height: 250px;
-                font-family: $rale;
-                font-weight: 400;
-                font-size: 14px;
                 padding: 40px;
                 animation-duration: 0.9s;
                 animation-name: aparecerB;
@@ -107,6 +93,9 @@ main {
                         padding-top: 4px;
                     }
                 }
+            }
+            ul {
+                @include flex(column);
             }
         }
     }

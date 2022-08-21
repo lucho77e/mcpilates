@@ -7,12 +7,12 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 16px 0px;
 }
 body header nav div img {
@@ -26,9 +26,6 @@ body header nav div img {
 }
 body header nav div div ul li a {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 4px;
   margin: 4px 12px;
   list-style-type: none;
@@ -47,17 +44,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   margin-top: 32px;
   margin-bottom: 32px;
   margin-left: auto;
@@ -65,18 +59,25 @@ main p {
   width: 50%;
 }
 main img {
-  width: 600px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 main .beneficiosDestacados {
-  background-color: rgb(255, 227, 218);
+  background-color: #ffe3da;
   width: 100%;
   padding: 40px;
   margin-top: 24px;
   margin-bottom: 24px;
 }
+main .beneficiosDestacados ul {
+  padding-left: 0px;
+}
 main .beneficiosDestacados ul li {
   margin: 4px 12px;
   list-style-type: none;
+}
+main .beneficiosDestacados ul li div {
+  text-align: center;
 }
 main .beneficiosDestacados ul li div img {
   width: 128px;
@@ -90,12 +91,12 @@ main .niveles {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 40px;
   margin-top: 12px;
@@ -109,20 +110,17 @@ main .niveles ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 main .niveles ul li {
   margin: 4px 12px;
   list-style-type: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   padding: 40px;
   padding-top: 20px;
 }
@@ -134,12 +132,12 @@ main ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 main ul li div {
@@ -153,9 +151,6 @@ main ul li div {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 250px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   padding: 40px;
   -webkit-animation-duration: 0.9s;
           animation-duration: 0.9s;
@@ -181,14 +176,28 @@ main ul li div {
     padding: 16px;
     padding-top: 4px;
   }
+  body main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 footer {
-  padding-bottom: 12px;
   padding-top: 36px;
   padding-bottom: 40px;
   margin-top: 36px;
-  background-color: rgb(29, 24, 32);
-  color: beige;
+  background-color: #1d1820;
+  color: #f5f5dc;
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -199,18 +208,15 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
+  color: #ffffff;
 }
 footer img {
   padding-left: 20px;
@@ -259,7 +265,7 @@ h1 {
 }
 
 body {
-  background-color: beige !important;
+  background-color: #f5f5dc !important;
   min-height: 100vh;
 }
 
@@ -295,26 +301,16 @@ form, .form-texto {
             transform: scale(1);
   }
 }
+.tipografia, .tabla, body header nav div div ul li a, main p, main .niveles ul li, main ul li div, footer p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .tabla {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.tipografia {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.contacto {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  margin: 32px;
 }
 
 input {
@@ -324,7 +320,7 @@ input {
 td, th, caption {
   min-width: 100px;
   padding: 12px;
-  background-color: rgba(29, 24, 32, 0.05);
+  background-color: rgba(29, 24, 32, 0.0509803922);
 }
 
 .maxImg {

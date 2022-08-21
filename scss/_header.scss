@@ -1,10 +1,7 @@
 
 body {
     header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flex(row);
         margin: 16px 0px;
         nav {
             div {
@@ -18,10 +15,8 @@ body {
                     ul{
                         li{
                             a{
+                                @extend .tipografia;
                                 text-decoration: none;
-                                font-family: $rale;
-                                font-weight: 400;
-                                font-size: 14px;
                                 letter-spacing: 4px;
                                 margin: 4px 12px;
                                 list-style-type: none;
