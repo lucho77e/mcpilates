@@ -17,7 +17,7 @@ main {
         width: 600px;
     }
     .beneficiosDestacados {
-        background-color: rgb(255, 227, 218);
+        background-color: map-get($colors, pink);
         width: 100%;
         padding: 40px;
         margin-top: 24px;

@@ -6,23 +6,28 @@
 
 $rale: 'Raleway', sans-serif;
 
+$colors: (
+    beige: #f5f5dc,
+    dusk: #1d1820,
+    dusk005: #1d18200d,
+    pink: #ffe3da,
+    white: #ffffff
+);
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 400;
+    padding: 400;
     box-sizing: border-box;
 }
 
 body {
-    background-color: beige !important;
+    background-color: map-get($colors, beige) !important;
     min-height: 100vh;
 }
 
-
-
 form, .form-texto {
     text-align: left !important;
-    font-family: $rale;;
+    font-family: $rale;
     font-weight: 300;
     font-size: 14px;
 }
@@ -59,9 +64,7 @@ form, .form-texto {
 }
 
 .contacto {
-    font-family: $rale;;
-    font-weight: 400;
-    font-size: 14px;
+    @extend .tipografia;
     margin: 32px;
 }
 
@@ -72,7 +75,7 @@ input {
 td, th, caption {
     min-width: 100px;
     padding: 12px;
-    background-color: rgb(29, 24, 32, 0.05);
+    background-color: map-get($colors, dusk005);
 }
 
 .maxImg {

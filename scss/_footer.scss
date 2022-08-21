@@ -3,8 +3,8 @@ footer {
     padding-top: 36px;
     padding-bottom: 40px;
     margin-top: 36px;
-    background-color: rgb(29, 24, 32);
-    color: beige;
+    background-color: map-get($colors, dusk);
+    color: map-get($colors, beige);
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -16,7 +16,7 @@ footer {
         font-family: $rale;
         font-weight: 400;
         font-size: 14px;
-        color: white;
+        color: map-get($colors, white);
     }
     img {
         padding-left: 20px;
