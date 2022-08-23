@@ -1,0 +1,8 @@
+Tareas que hice para optimizar SEO
+
+-Comprimí y optimicé las imágenes
+-Implementé un SRCSET para las imágenes grandes
+-Agregué atributo ALT a las imágenes que no tenían
+-Redacté las etiqutas meta Description y Keywords para cada html
+-Utilicé un Title distinto para cada html
+-Revisé la correcta implementación de h1, h2, h3...
