@@ -10,9 +10,19 @@ footer {
     @include flex(row);
     p {
         @extend .tipografia;
+        text-align: center;
         color: map-get($colors, white);
+        margin: 0 0;
     }
-    img {
-        padding-left: 20px;
-    } 
+    div {
+        img {
+            padding-left: 20px;
+        } 
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        @include flex(column);
+    }
 }

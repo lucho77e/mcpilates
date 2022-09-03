@@ -5,7 +5,9 @@ $colors: (
     dusk: #1d1820,
     dusk005: #1d18200d,
     pink: #ffe3da,
-    white: #ffffff
+    white: #ffffff,
+    green: #7fffd4,
+    lightenpink: #fcf3fc
 );
 
 @mixin flex($direction){
@@ -80,6 +82,10 @@ td, th, caption {
 .maxImg {
     width: 70%;
     margin-top: 8px;
+}
+
+.maxImg:hover {
+    box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.2);
 }
 
 

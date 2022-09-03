@@ -21,11 +21,15 @@ main {
         margin-bottom: 24px;
         ul{ 
             padding-left: 0px;
+            margin-top: 48px;
             li{
                 margin: 4px 12px;
                 list-style-type: none;
                 div{
                     text-align: center;
+                    background-color: map-get($colors, lightenpink);
+                    border-radius: 20px;
+                    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.12);
                     img{
                         width: 128px;
                         margin-bottom: 24px;
@@ -43,13 +47,21 @@ main {
         ul {
             @include flex(row);
             width: 100%;
+            padding-left: 0px;
+            margin-top: 20px;
             li {
                 @extend .tipografia;
+                border-radius: 16px;
+                background-color: map-get($colors, green);
                 margin: 4px 12px;
                 list-style-type: none;
-                padding: 40px;
-                padding-top: 20px;
+                padding: 8px 20px;
             }
+        }
+        p {
+            @extend .tipografia;
+            margin-top: 12px;
+            text-align: center
         }
     }
     ul {
@@ -88,10 +100,6 @@ main {
             .niveles {
                 ul {
                     flex-direction: column;
-                    li {
-                        padding: 16px;
-                        padding-top: 4px;
-                    }
                 }
             }
             ul {

@@ -71,6 +71,7 @@ main .beneficiosDestacados {
 }
 main .beneficiosDestacados ul {
   padding-left: 0px;
+  margin-top: 48px;
 }
 main .beneficiosDestacados ul li {
   margin: 4px 12px;
@@ -78,6 +79,10 @@ main .beneficiosDestacados ul li {
 }
 main .beneficiosDestacados ul li div {
   text-align: center;
+  background-color: #fcf3fc;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.12);
 }
 main .beneficiosDestacados ul li div img {
   width: 128px;
@@ -117,12 +122,19 @@ main .niveles ul {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-left: 0px;
+  margin-top: 20px;
 }
 main .niveles ul li {
+  border-radius: 16px;
+  background-color: #7fffd4;
   margin: 4px 12px;
   list-style-type: none;
-  padding: 40px;
-  padding-top: 20px;
+  padding: 8px 20px;
+}
+main .niveles p {
+  margin-top: 12px;
+  text-align: center;
 }
 main ul {
   display: -webkit-box;
@@ -172,10 +184,6 @@ main ul li div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .niveles ul li {
-    padding: 16px;
-    padding-top: 4px;
-  }
   body main ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,12 +224,31 @@ footer {
           align-items: center;
 }
 footer p {
+  text-align: center;
   color: #ffffff;
+  margin: 0 0;
 }
-footer img {
+footer div img {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 991px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -301,7 +328,7 @@ form, .form-texto {
             transform: scale(1);
   }
 }
-.tipografia, .tabla, body header nav div div ul li a, main p, main .niveles ul li, main ul li div, footer p {
+.tipografia, .tabla, body header nav div div ul li a, main p, main .niveles ul li, main .niveles p, main ul li div, footer p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -326,6 +353,11 @@ td, th, caption {
 .maxImg {
   width: 70%;
   margin-top: 8px;
+}
+
+.maxImg:hover {
+  -webkit-box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.2);
 }
 
 @-webkit-keyframes aparecerTitulo {
