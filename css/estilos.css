@@ -206,9 +206,10 @@ footer {
   margin-top: 36px;
   background-color: #1d1820;
   color: #f5f5dc;
-  position: relative;
-  bottom: 0px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +294,15 @@ h1 {
 
 body {
   background-color: #f5f5dc !important;
+}
+
+.page-container {
+  position: relative;
   min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 80px;
 }
 
 form, .form-texto {
